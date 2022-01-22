@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main{
 	public static ArrayList<Double> quadratic(double a, double b, double c){
-		ArrayList<Double> s = new ArrayList < > ();
+		ArrayList<Double> s = new ArrayList<>();
 		if (b * b < 4 *a *c) return s;
 		else if (b *b == 4 *a *c){
 			double r = 2 * a;
