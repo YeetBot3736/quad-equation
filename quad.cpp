@@ -3,7 +3,7 @@ using namespace std;
 
 vector<double> quadratic(double a, double b, double c){
 	vector<double>s;
-	if( b*b < 4*a*c) return s;
+	if(b*b < 4*a*c) return s;
 	else if( b*b == 4*a*c){
 		double r = 2*a;
 		double t = 0-b;
@@ -29,6 +29,10 @@ vector<double> quadratic(double a, double b, double c){
 
 int main(){
 	int a,b,c; cin>>a>>b>>c;
+	if(a==0){
+		cout<<"a cannot be 0!";
+		exit(0);
+	}
 	vector<double> x = quadratic(a,b,c);
 	if(x.empty()) cout<<"IMAGINARY SOLUTIONS ARE NOT SUPPORTED!";
 	for(int i = 0; i< x.size(); i ++){
