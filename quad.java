@@ -30,12 +30,16 @@ public class Main{
 		double a = scan.nextDouble();
 		double b = scan.nextDouble();
 		double c = scan.nextDouble();
+		if(a == 0){
+			System.out.print("a cannot be equal to 0!);
+			System.exit(0);
+		}			 
 		ArrayList<Double> x = quadratic(a, b, c);
 		if (x.isEmpty()) System.out.print("IMAGINARY SOLUTIONS ARE NOT SUPPORTED!!!");
 		else{
 			for (int i = 0; i < x.size(); i++){
 				System.out.print(x.get(i));
-				if (i != x.size() - 1) System.out.print(" and ");
+				if (i != x.size() - 1) System.out.print(" or ");
 			}
 		}
 	}
