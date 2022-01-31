@@ -31,7 +31,9 @@ try:
 except:
     print("Invalid input")
     exit()
-
+if v[0] == 0:
+    print("a cannot be equal to 0!")
+    exit()
 n = quadratic(v[0],v[1],v[2])
 if not n:
     print("IMAGINARY SOLUTIONS ARE NOT SUPPORTED!")
